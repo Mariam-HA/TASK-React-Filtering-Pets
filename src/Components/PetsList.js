@@ -1,6 +1,8 @@
 import PetItem from "./PetItem";
 import pets from "../petsData";
 import { useState } from "react";
+import Search from "./Search";
+import Selector from "./Selector";
 
 function PetsList() {
   const [query, setQuery] = useState("");
@@ -34,26 +36,10 @@ function PetsList() {
               <h1 className="mb-25 wow fadeInUp" data-wow-delay=".2s">
                 Fur-ends
               </h1>
-              <div className="input-group rounded">
-                <input
-                  onChange={changeQuery}
-                  type="search"
-                  className="form-control rounded"
-                  placeholder="Search"
-                  aria-label="Search"
-                  aria-describedby="search-addon"
-                />
-              </div>
+              <Search />
               <br />
               Type:
-              <select className="form-select" onChange={bySpecie}>
-                <option value="" selected>
-                  All
-                </option>
-                <option value="Cat">Cat</option>
-                <option value="Dog">Dog</option>
-                <option value="Rabbit">Rabbit</option>
-              </select>
+              <Selector />
             </div>
           </div>
         </div>
