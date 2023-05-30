@@ -19,6 +19,8 @@ function PetItem({ pet }) {
           <button type="button" class="btn btn-info  m-2">
             Adopt
           </button>
+
+          <button></button>
         </div>
       </div>
     </div>

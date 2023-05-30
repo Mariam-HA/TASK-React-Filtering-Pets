@@ -3,8 +3,7 @@ import React from "react";
 const Selector = ({ bySpecie }) => {
   return (
     <div>
-      {" "}
-      <select className="form-select" onChange={bySpecie}>
+      <select className="form-select" onChange={(event) => bySpecie(event)}>
         <option value="" selected>
           All
         </option>

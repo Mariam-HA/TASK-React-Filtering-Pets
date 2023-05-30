@@ -36,10 +36,10 @@ function PetsList() {
               <h1 className="mb-25 wow fadeInUp" data-wow-delay=".2s">
                 Fur-ends
               </h1>
-              <Search />
+              <Search changeQuery={changeQuery} />
               <br />
               Type:
-              <Selector />
+              <Selector bySpecie={bySpecie} />
             </div>
           </div>
         </div>

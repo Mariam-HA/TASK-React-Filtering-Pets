@@ -3,10 +3,9 @@ import React from "react";
 const Search = ({ changeQuery }) => {
   return (
     <div>
-      {" "}
       <div className="input-group rounded">
         <input
-          onChange={changeQuery}
+          onChange={(event) => changeQuery(event)}
           type="search"
           className="form-control rounded"
           placeholder="Search"
